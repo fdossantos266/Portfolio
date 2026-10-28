@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <radialGradient id="bg" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#3a1030"/><stop offset="1" stop-color="#0b0d12"/></radialGradient>
+    <radialGradient id="orb" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#ffd6ec"/><stop offset=".55" stop-color="#ff5fa8"/><stop offset="1" stop-color="#9a1f62"/></radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g fill="#ffd000">
+    <path d="M300 200 l10 30 30 10 -30 10 -10 30 -10 -30 -30 -10 30 -10z"/>
+    <path d="M1280 160 l8 24 24 8 -24 8 -8 24 -8 -24 -24 -8 24 -8z"/>
+    <path d="M1360 640 l12 36 36 12 -36 12 -12 36 -12 -36 -36 -12 36 -12z"/>
+    <path d="M220 660 l7 20 20 7 -20 7 -7 20 -7 -20 -20 -7 20 -7z"/>
+  </g>
+  <!-- score -->
+  <text x="800" y="140" text-anchor="middle" font-family="Consolas,monospace" font-size="64" font-weight="700" fill="#fff">128 450 ✦</text>
+  <text x="800" y="186" text-anchor="middle" font-family="Consolas,monospace" font-size="24" fill="#ff9fcd">+3 420 / s</text>
+  <!-- orb -->
+  <circle cx="620" cy="500" r="190" fill="#ff5fa8" opacity=".15"/>
+  <circle cx="620" cy="500" r="150" fill="url(#orb)" stroke="#fff" stroke-width="6"/>
+  <text x="620" y="520" text-anchor="middle" font-family="Consolas,monospace" font-size="44" font-weight="700" fill="#fff">CLICK!</text>
+  <g font-family="Consolas,monospace" font-size="30" font-weight="700" fill="#ffd000">
+    <text x="820" y="360">+12</text><text x="420" y="320" opacity=".7">+12</text><text x="780" y="680" opacity=".5">+12</text>
+  </g>
+  <!-- upgrades -->
+  <g transform="translate(980 300)" font-family="Consolas,monospace">
+    <rect width="420" height="96" rx="14" fill="#1d1424" stroke="#ff5fa8" stroke-width="2"/>
+    <text x="24" y="42" font-size="24" fill="#fff">Power ×2</text><text x="24" y="74" font-size="18" fill="#ff9fcd">LV 7</text>
+    <rect x="290" y="28" width="106" height="40" rx="10" fill="#ffd000"/><text x="343" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#1d1424">BUY</text>
+    <g transform="translate(0 120)">
+      <rect width="420" height="96" rx="14" fill="#1d1424" stroke="#3a2a44" stroke-width="2"/>
+      <text x="24" y="42" font-size="24" fill="#fff">Auto-click</text><text x="24" y="74" font-size="18" fill="#ff9fcd">LV 3</text>
+      <rect x="290" y="28" width="106" height="40" rx="10" fill="#ffd000"/><text x="343" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#1d1424">BUY</text>
+    </g>
+    <g transform="translate(0 240)">
+      <rect width="420" height="96" rx="14" fill="#1d1424" stroke="#3a2a44" stroke-width="2"/>
+      <text x="24" y="42" font-size="24" fill="#fff">Prestige ★</text><text x="24" y="74" font-size="18" fill="#ff9fcd">×1.5 bonus</text>
+      <rect x="290" y="28" width="106" height="40" rx="10" fill="#3a2a44"/><text x="343" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#8c94a8">LOCK</text>
+    </g>
+  </g>
+</svg>

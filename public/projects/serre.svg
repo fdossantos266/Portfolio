@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0c1a14"/><stop offset="1" stop-color="#0b0d12"/></linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3ddc84" stop-opacity=".35"/><stop offset="1" stop-color="#3ddc84" stop-opacity="0"/></linearGradient>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1d2a24" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#g)" opacity=".7"/>
+  <!-- ESP32 board -->
+  <g transform="translate(140 300)">
+    <rect width="300" height="200" rx="14" fill="#13261d" stroke="#3ddc84" stroke-width="3"/>
+    <rect x="90" y="50" width="120" height="100" rx="8" fill="#0b0d12" stroke="#2c4a3b" stroke-width="2"/>
+    <text x="150" y="108" text-anchor="middle" font-family="Consolas,monospace" font-size="22" fill="#3ddc84">ESP32</text>
+    <g fill="#ffd000">
+      <rect x="20" y="-14" width="10" height="14"/><rect x="50" y="-14" width="10" height="14"/><rect x="80" y="-14" width="10" height="14"/><rect x="110" y="-14" width="10" height="14"/><rect x="140" y="-14" width="10" height="14"/><rect x="170" y="-14" width="10" height="14"/><rect x="200" y="-14" width="10" height="14"/><rect x="230" y="-14" width="10" height="14"/><rect x="260" y="-14" width="10" height="14"/>
+      <rect x="20" y="200" width="10" height="14"/><rect x="50" y="200" width="10" height="14"/><rect x="80" y="200" width="10" height="14"/><rect x="110" y="200" width="10" height="14"/><rect x="140" y="200" width="10" height="14"/><rect x="170" y="200" width="10" height="14"/><rect x="200" y="200" width="10" height="14"/><rect x="230" y="200" width="10" height="14"/><rect x="260" y="200" width="10" height="14"/>
+    </g>
+  </g>
+  <!-- leaf -->
+  <g transform="translate(250 150)">
+    <path d="M40 90 C40 30 90 0 150 0 C150 60 110 100 40 90 Z" fill="#3ddc84" opacity=".9"/>
+    <path d="M40 90 L120 25" stroke="#0c1a14" stroke-width="5"/>
+  </g>
+  <!-- flow -->
+  <g font-family="Consolas,monospace" font-size="22" fill="#8c94a8">
+    <path d="M460 400 H620" stroke="#ffd000" stroke-width="3" stroke-dasharray="10 8"/>
+    <text x="490" y="385">MQTT</text>
+    <rect x="620" y="350" width="170" height="100" rx="12" fill="#141823" stroke="#252b3a" stroke-width="2"/>
+    <text x="705" y="395" text-anchor="middle" fill="#e9ecf3">Node.js</text>
+    <text x="705" y="425" text-anchor="middle">API · WS</text>
+    <path d="M705 450 V560" stroke="#ffd000" stroke-width="3" stroke-dasharray="10 8"/>
+    <ellipse cx="705" cy="580" rx="80" ry="20" fill="#141823" stroke="#252b3a" stroke-width="2"/>
+    <rect x="625" y="580" width="160" height="80" fill="#141823"/>
+    <path d="M625 580 V660 A80 20 0 0 0 785 660 V580" fill="#141823" stroke="#252b3a" stroke-width="2"/>
+    <text x="705" y="632" text-anchor="middle" fill="#e9ecf3">PostgreSQL</text>
+    <path d="M790 400 H900" stroke="#ffd000" stroke-width="3" stroke-dasharray="10 8"/>
+  </g>
+  <!-- dashboard -->
+  <g transform="translate(900 170)">
+    <rect width="580" height="520" rx="18" fill="#141823" stroke="#252b3a" stroke-width="2"/>
+    <rect width="580" height="54" rx="18" fill="#1a1f2c"/>
+    <rect y="36" width="580" height="18" fill="#1a1f2c"/>
+    <circle cx="30" cy="27" r="7" fill="#ff5f57"/><circle cx="54" cy="27" r="7" fill="#febc2e"/><circle cx="78" cy="27" r="7" fill="#28c840"/>
+    <g font-family="Consolas,monospace">
+      <rect x="30" y="80" width="160" height="96" rx="12" fill="#0b0d12"/>
+      <text x="48" y="112" font-size="16" fill="#8c94a8">TEMP</text><text x="48" y="156" font-size="36" fill="#e9ecf3">24.6°</text>
+      <rect x="210" y="80" width="160" height="96" rx="12" fill="#0b0d12"/>
+      <text x="228" y="112" font-size="16" fill="#8c94a8">HUM</text><text x="228" y="156" font-size="36" fill="#e9ecf3">68%</text>
+      <rect x="390" y="80" width="160" height="96" rx="12" fill="#0b0d12"/>
+      <text x="408" y="112" font-size="16" fill="#8c94a8">ALERT</text><text x="408" y="156" font-size="36" fill="#3ddc84">OK</text>
+    </g>
+    <rect x="30" y="200" width="520" height="290" rx="12" fill="#0b0d12"/>
+    <path d="M50 430 L110 400 L170 410 L230 350 L290 370 L350 300 L410 320 L470 260 L530 280 L530 470 L50 470 Z" fill="url(#area)"/>
+    <path d="M50 430 L110 400 L170 410 L230 350 L290 370 L350 300 L410 320 L470 260 L530 280" fill="none" stroke="#3ddc84" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="530" cy="280" r="8" fill="#ffd000"/>
+  </g>
+</svg>

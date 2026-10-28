@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a1a0c"/><stop offset="1" stop-color="#0b0d12"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8a3d"/><stop offset="1" stop-color="#e2452b"/></linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <!-- client phone -->
+  <g transform="translate(360 90)">
+    <rect width="380" height="740" rx="48" fill="#0f1118" stroke="#3a3f4f" stroke-width="6"/>
+    <rect x="150" y="22" width="80" height="14" rx="7" fill="#262b38"/>
+    <g font-family="Consolas,monospace">
+      <text x="34" y="100" font-size="20" fill="#8c94a8">Olá, Ana 👋</text>
+      <rect x="28" y="124" width="324" height="170" rx="22" fill="url(#card)"/>
+      <text x="52" y="168" font-size="18" fill="#fff" opacity=".85">SALDO DE PONTOS</text>
+      <text x="52" y="236" font-size="64" font-weight="700" fill="#fff">240</text>
+      <text x="52" y="272" font-size="18" fill="#fff" opacity=".9">= 24,00 € de desconto</text>
+      <!-- QR -->
+      <rect x="100" y="320" width="180" height="180" rx="14" fill="#fff"/>
+      <g fill="#0f1118">
+        <rect x="116" y="336" width="44" height="44"/><rect x="124" y="344" width="28" height="28" fill="#fff"/><rect x="130" y="350" width="16" height="16"/>
+        <rect x="220" y="336" width="44" height="44"/><rect x="228" y="344" width="28" height="28" fill="#fff"/><rect x="234" y="350" width="16" height="16"/>
+        <rect x="116" y="440" width="44" height="44"/><rect x="124" y="448" width="28" height="28" fill="#fff"/><rect x="130" y="454" width="16" height="16"/>
+        <rect x="172" y="340" width="10" height="10"/><rect x="190" y="352" width="10" height="10"/><rect x="176" y="372" width="10" height="10"/><rect x="200" y="392" width="10" height="10"/><rect x="172" y="404" width="10" height="10"/><rect x="226" y="400" width="10" height="10"/><rect x="250" y="412" width="10" height="10"/><rect x="186" y="430" width="10" height="10"/><rect x="214" y="444" width="10" height="10"/><rect x="240" y="460" width="10" height="10"/><rect x="176" y="470" width="10" height="10"/><rect x="200" y="476" width="10" height="10"/><rect x="254" y="476" width="10" height="10"/><rect x="132" y="408" width="10" height="10"/><rect x="150" y="420" width="10" height="10"/>
+      </g>
+      <text x="190" y="530" text-anchor="middle" font-size="16" fill="#8c94a8">Mostre na caixa</text>
+      <text x="34" y="580" font-size="18" fill="#e9ecf3">Histórico</text>
+      <rect x="28" y="596" width="324" height="52" rx="12" fill="#1a1f2c"/>
+      <text x="48" y="628" font-size="16" fill="#e9ecf3">Compra · 32,50 €</text><text x="332" y="628" text-anchor="end" font-size="16" fill="#3ddc84">+32</text>
+      <rect x="28" y="656" width="324" height="52" rx="12" fill="#1a1f2c"/>
+      <text x="48" y="688" font-size="16" fill="#e9ecf3">Resgate</text><text x="332" y="688" text-anchor="end" font-size="16" fill="#ff8a3d">−100</text>
+    </g>
+  </g>
+  <!-- admin / architecture -->
+  <g transform="translate(860 170)" font-family="Consolas,monospace">
+    <rect width="420" height="110" rx="16" fill="#141823" stroke="#252b3a" stroke-width="2"/>
+    <text x="28" y="48" font-size="22" fill="#e9ecf3">Flutter</text><text x="28" y="80" font-size="16" fill="#8c94a8">iOS · Android · Riverpod · go_router</text>
+    <path d="M210 110 V170" stroke="#ff8a3d" stroke-width="3" stroke-dasharray="8 7"/>
+    <rect y="170" width="420" height="230" rx="16" fill="#141823" stroke="#ff8a3d" stroke-width="2"/>
+    <text x="28" y="214" font-size="22" fill="#ff8a3d">Firebase</text>
+    <g font-size="17" fill="#e9ecf3">
+      <text x="28" y="256">▸ Auth</text><text x="28" y="290">▸ Cloud Firestore</text><text x="28" y="324">▸ Cloud Messaging</text>
+      <text x="28" y="370" fill="#8c94a8">users/{uid}/historico</text>
+    </g>
+    <rect y="440" width="420" height="130" rx="16" fill="#141823" stroke="#252b3a" stroke-width="2"/>
+    <text x="28" y="484" font-size="18" fill="#8c94a8">REGRA</text>
+    <text x="28" y="526" font-size="24" fill="#e9ecf3">10 € → 10 pts → 1 €</text>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#200608"/><stop offset="1" stop-color="#0b0d12"/></linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e8000a"/><stop offset="1" stop-color="#ffd000"/></linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <!-- fake game screen -->
+  <rect x="120" y="110" width="1360" height="680" rx="20" fill="#0f1118" stroke="#2a1416" stroke-width="3"/>
+  <g opacity=".35" stroke="#e8000a" stroke-width="2" fill="none">
+    <path d="M800 450 m-60 0 h40 m40 0 h40 M800 450 m0 -60 v40 m0 40 v40"/>
+    <circle cx="800" cy="450" r="4" fill="#e8000a"/>
+  </g>
+  <!-- live badge -->
+  <g transform="translate(170 160)" font-family="Consolas,monospace" font-weight="700">
+    <rect width="120" height="48" rx="8" fill="#e8000a"/>
+    <circle cx="26" cy="24" r="8" fill="#fff"/>
+    <text x="46" y="33" font-size="24" fill="#fff">LIVE</text>
+  </g>
+  <!-- viewer counter panel -->
+  <g transform="translate(940 160)" font-family="Consolas,monospace">
+    <rect width="490" height="300" rx="16" fill="#141823" stroke="#ffd000" stroke-width="3"/>
+    <text x="30" y="52" font-size="20" fill="#8c94a8">TOTAL VIEWERS</text>
+    <text x="30" y="122" font-size="72" font-weight="700" fill="#ffd000">1 284</text>
+    <g font-size="22">
+      <rect x="30" y="160" width="14" height="14" rx="3" fill="#9146ff"/><text x="56" y="174" fill="#e9ecf3">Twitch</text><text x="460" y="174" text-anchor="end" fill="#e9ecf3">642</text>
+      <rect x="30" y="205" width="14" height="14" rx="3" fill="#ff0033"/><text x="56" y="219" fill="#e9ecf3">YouTube</text><text x="460" y="219" text-anchor="end" fill="#e9ecf3">418</text>
+      <rect x="30" y="250" width="14" height="14" rx="3" fill="#53fc18"/><text x="56" y="264" fill="#e9ecf3">Kick</text><text x="460" y="264" text-anchor="end" fill="#e9ecf3">224</text>
+    </g>
+  </g>
+  <!-- now playing -->
+  <g transform="translate(170 640)" font-family="Consolas,monospace">
+    <rect width="560" height="100" rx="14" fill="#141823" stroke="#252b3a" stroke-width="2"/>
+    <rect x="18" y="18" width="64" height="64" rx="10" fill="url(#bar)"/>
+    <text x="104" y="46" font-size="16" fill="#8c94a8">NOW PLAYING</text>
+    <text x="104" y="76" font-size="24" fill="#e9ecf3">lofi beats — track 07</text>
+    <g fill="#ffd000"><rect x="490" y="40" width="8" height="40"/><rect x="504" y="28" width="8" height="52"/><rect x="518" y="50" width="8" height="30"/></g>
+  </g>
+  <!-- bottom bar -->
+  <rect x="120" y="770" width="1360" height="20" fill="url(#bar)"/>
+  <text x="1430" y="740" text-anchor="end" font-family="Consolas,monospace" font-size="30" font-weight="700" fill="#ffd000">ATOMIC<tspan fill="#e8000a">CAFEIN</tspan></text>
+</svg>
